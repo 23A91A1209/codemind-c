@@ -1,21 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n;
-    scanf("%d", &n); 
-    int a=0,b=1,c;
+    int n,a=0,b=1,c;
+    scanf("%d", &n);
     while(a<n)
     {
         c=a+b;
-        a=b;
-        b=c;
+        b=a;
+        a=c;
     }
     if(a==n)
     {
         printf("True");
     }
-     else
+    else
     {
-      printf("False");
+        printf("False");
     }
 }
